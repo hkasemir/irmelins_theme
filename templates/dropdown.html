@@ -4,6 +4,8 @@
 
 {% if branch_level == 0 %}
 <ul class="nav navbar-nav">
+     <li class="brand"><a href="/">Irmelin S. Art</a></li>
+
     {% for page in page_branch %}
 <!--
     {% if not has_home and page.is_primary and forloop.first %}
@@ -27,6 +29,8 @@
     </li>
     {% endif %}
     {% endfor %}
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#contact">Contact</a></li>
 </ul>
 
 {% else %}
