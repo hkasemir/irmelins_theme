@@ -6,12 +6,17 @@
     font-weight: 300;
 }
 
+a {
+  text-decoration: none;
+  color: #4FA1C4;
+}
+
 article {
     padding: 2em;
     max-width: 60em;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 5.5em;
+    padding-top: 5em;
 }
 
 body {
@@ -33,7 +38,7 @@ nav a {
     text-decoration: none;
     display: block;
     padding: 2em 1.5em;
-    color: #94CDDB;
+    color: #4FA1C4;
     transition: all .3s ease-in-out;
 
 }
@@ -80,7 +85,7 @@ footer {
 
 footer > a {
   text-decoration: none;
-  color: #94CDDB;
+  color: #4FA1C4;
 }
 
 a.gallery {
@@ -130,18 +135,28 @@ li.brand > a {
     position: fixed;
     top: 0;
     left: 0;
-    background: radial-gradient(ellipse farthest-corner at 0px 0px , #94CDDB, rgba(255,255,255,0) 65%);
+    background: radial-gradient(ellipse farthest-corner at 0px 0px , #4FA1C4, rgba(255,255,255,0) 65%);
 }
 
 li.brand a:hover {
 /*    background: radial-gradient(ellipse farthest-corner at 0px 0px , black, rgba(255,255,255,0) 71%);*/
-    color: #94CDDB;
+    color: #4FA1C4;
 }
 
-.featured-image {
-    height: 480px;
-    background: url('http://irmelinsart.com/images/s_ghost_horses_2.jpg') no-repeat center center fixed;
+ul.nav > li.active a {
+  color: white;
+}
+
+div.featured-image {
+    height: 500px;
+    background: url('http://irmelins.webfactional.com/media/uploads/galleries/s_ghost_horses_2.jpg') no-repeat center center fixed;
     background-size: cover;
+}
+
+.container > h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 1.5em;
 }
 
 .images {
@@ -176,7 +191,7 @@ li.brand a:hover {
 div.gallery {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5em;
+  margin-top: 7em;
 }
 
 div.column {
