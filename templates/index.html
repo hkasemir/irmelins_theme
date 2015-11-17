@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load mezzanine_tags %}
 
+{% block extra_js %}
+<script defer src="{{ STATIC_URL }}js/image-swap.js"></script>
+{% endblock %}
+
 {% block main %}
 <div class="featured-image">
 </div>
@@ -11,11 +15,15 @@
         <p>With 4 years of art school in Munich and a lifetime of experience creating, I have produced captivating paintings and drawings, using acrylics, pen and ink, and watercolor.</p>
         <div class="images">
         <div class="feature-thumb">
-        <img src="{{ MEDIA_URL }}{% thumbnail "uploads/galleries/shandtree.jpg" 625 700 %}" alt="hand tree pen and ink"></div>
+        <img src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/shandtree.jpg" 625 700 %}" alt="hand tree pen and ink">
+        <img style="display:none;"src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/shandtree.jpg" 255 230 %}" alt="hand tree pen and ink"></div>
         <div class="thumb-div">
-        <img class="thumb" src="{{ MEDIA_URL }}{% thumbnail "uploads/galleries/red_feather_bw.jpg" 255 230 %}" alt="red feather">
-        <img class="thumb" src="{{ MEDIA_URL }}{% thumbnail "uploads/galleries/simg_1035.jpg" 255 230 %}" alt="fantasy tree painting">
-        <img class="thumb" src="{{ MEDIA_URL }}{% thumbnail "uploads/galleries/portrait.jpg" 255 230 %}" alt="graphite portrait">
+        <img class="thumb" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/red_feather_bw.jpg" 255 230 %}" alt="red feather">
+        <img class="thumb" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/simg_1035.jpg" 255 230 %}" alt="fantasy tree painting">
+        <img class="thumb" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/s_mg_9494.jpg" 255 230 %}" alt="graphite portrait">
+        <img style="display:none;" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/red_feather_bw.jpg" 625 700 %}" alt="red feather">
+        <img style="display:none;" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/simg_1035.jpg" 625 700 %}" alt="fantasy tree painting">
+        <img style="display:none;" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/s_mg_9494.jpg" 625 700 %}" alt="graphite portrait">
         </div></div>
         <a href="paintings-gallery" class="gallery">Paintings Gallery</a>
     </article>
@@ -23,7 +31,7 @@
        <h2>About</h2>
        <div class="about">
         <p>My name is Irmelin Shively, I was born in Czechoslovakia when the sun was in Libra, the moon in Leo, and Cancer on the horizon. I have lived a life full of joy and love, but also tragedy and hardship. I wish to leave art as my legacy, and share the beauty I see in the world around me. The human spirit is amazing, this is a fact I will always cherish.</p>
-        <div class="profile"><img src="{{ MEDIA_URL }}uploads/galleries/irmelin.jpg" alt="">
+        <div class="profile"><img src="{{ MEDIA_URL }}uploads/photo-gallery/P8250143.jpg" alt="">
         </div></div>
     </article>
     <article id="photography">
@@ -31,12 +39,16 @@
         <p>The art in photography is in capturing the moment of wonder and emotion. I specialize in nature and portrait photography.</p>
         <div class="images">
         <div class="feature-thumb">
-            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/galleries/monarch.jpg" 625 550 %}" alt="">
+            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/simg_8236.jpg" 625 550 %}" alt="">
+            <img style="display:none;" src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/simg_8236.jpg" 250 175 %}" alt="">
         </div>
         <div class="thumb-div">
-            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/galleries/kaiandairri.jpg" 250 175 %}" alt="" class="thumb">
-            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/galleries/waitingforthebus.jpg" 250 175 %}" alt="" class="thumb">
-            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/galleries/colorado.jpg" 250 175 %}" alt="" class="thumb">
+            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/simg_0358.jpg" 250 175 %}" alt="" class="thumb">
+            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/s2img_9466.jpg" 250 175 %}" alt="" class="thumb">
+            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/sf4kp1206.jpg" 250 175 %}" alt="" class="thumb">
+            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/simg_0358.jpg" 625 550 %}" alt="" style="display:none;">
+            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/s2img_9466.jpg" 625 550 %}" alt="" style="display:none;">
+            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/sf4kp1206.jpg" 625 550 %}" alt="" style="display:none;">
         </div></div>
         <a href="photo-gallery" class="gallery">Photo Gallery</a>
     </article>

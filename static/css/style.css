@@ -64,8 +64,6 @@ p {
 header {
     background: rgba(0,0,0,0.7);
     width: 100%;
-    position: fixed;
-    top: 0;
     overflow: hidden;
 }
 
@@ -132,7 +130,7 @@ li.brand > a {
     font-size: 2.5em;
     font-family: Tangerine, cursive;
     padding: 0.3em 2em 1em 1em;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     background: radial-gradient(ellipse farthest-corner at 0px 0px , #4FA1C4, rgba(255,255,255,0) 65%);
@@ -149,7 +147,7 @@ ul.nav > li.active a {
 
 div.featured-image {
     height: 500px;
-    background: url('http://irmelins.webfactional.com/media/uploads/galleries/s_ghost_horses_2.jpg') no-repeat center center fixed;
+    background: url('http://irmelins.webfactional.com/media/uploads/paintings-gallery/s_img_0443.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -160,12 +158,23 @@ div.featured-image {
 }
 
 .images {
-    display: flex;
-    margin-bottom: 2em;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+img {
+  -webkit-filter: opacity(1);
+  filter: opacity(1);
+  transition: all 0.3s;
+}
+
+img.dark {
+  -webkit-filter: opacity(0);
+  filter: opacity(0);
+  transition: all 0.3s;
 }
 
 .feature-thumb {
-/*    margin: 10px;*/
     flex: 2.5;
     margin-bottom: -4px;
 }
@@ -176,8 +185,8 @@ div.featured-image {
 }
 
 .thumb {
-    width: 100%;
-/*    margin: 1em*/
+  width: 100%;
+  cursor: pointer;
 }
 
 .thumb-div {
@@ -196,6 +205,7 @@ div.gallery {
 
 div.column {
   width: 25%;
+  min-width: 200px;
 }
 
 img.responsive {
