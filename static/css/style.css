@@ -234,12 +234,7 @@ img.responsive {
   
 }
   
-@media (max-width: 825px) {
-  div.featured-image {
-      height: 350px;
-      background: url('http://irmelins.webfactional.com/media/uploads/galleries/.thumbnails/sparring-min.jpg/sparring-min-0x500.jpg') no-repeat center center;
-      background-size: cover;
-  }
+@media (max-width: 950px) {
   nav {
     justify-content: center;
     padding-top: 3em;
@@ -249,6 +244,15 @@ img.responsive {
     width: 100%;
     text-align: center;  
     padding-bottom: 0;
+  }
+  
+}
+  
+@media (max-width: 825px) {
+  div.featured-image {
+      height: 350px;
+      background: url('http://irmelins.webfactional.com/media/uploads/galleries/.thumbnails/sparring-min.jpg/sparring-min-0x500.jpg') no-repeat center center;
+      background-size: cover;
   }
   
   div.thumb-div {
