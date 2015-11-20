@@ -7,6 +7,8 @@
 
 {% block main %}
 <div class="featured-image">
+  <img src="{{ MEDIA_URL }}{% thumbnail "uploads/galleries/sparring.jpg" 0 250 %}" alt="" style="display:none;">
+  <img src="{{ MEDIA_URL }}{% thumbnail "uploads/galleries/sparring.jpg" 0 600 %}" alt="" style="display:none;">
 </div>
 <section class="container">
   <h1>Irmelin Shively ~ Artist</h1>
@@ -15,15 +17,21 @@
         <p>With 4 years of art school in Munich and a lifetime of experience creating, I have produced captivating paintings and drawings, using acrylics, pen and ink, and watercolor.</p>
         <div class="images">
         <div class="feature-thumb">
-        <img src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/3x2_pilings.jpg" 625 700 %}" alt="painting">
-        <img style="display:none;"src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/3x2_pilings.jpg" 255 230 %}" alt="painting"></div>
+          <img src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/3x2_pilings.jpg" 0 500 %}" alt="painting" data-feature-html="<h3>Pilings</h3><p>22x28 -- Prints available</p><p>Reminiscent of the Pilings of the California Shore, with Sea Weed and Tuna floating around.</p>">
+          <img style="display:none;"src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/3x2_pilings.jpg" 0 150 %}">
+          <p class="description">
+<!--            <h3>Pilings</h3><p>22x28 -- Prints available</p><p>Reminiscent of the Pilings of the California Shore, with Sea Weed and Tuna floating around.</p>-->
+          </p>
+        </div>
         <div class="thumb-div">
-        <img class="thumb" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/2x3_portal.jpg" 255 230 %}" alt="painting">
-        <img class="thumb" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/2x3_bearded_tiger.jpg" 255 230 %}" alt="painting">
-        <img class="thumb" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/2x3_bastimentos.jpg" 255 230 %}" alt="painting">
-        <img style="display:none;" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/2x3_portal.jpg" 625 700 %}" alt="painting">
-        <img style="display:none;" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/2x3_bearded_tiger.jpg" 625 700 %}" alt="painting">
-        <img style="display:none;" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/2x3_bastimentos.jpg" 625 700 %}" alt="painting">
+        <img class="thumb" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/2x3_portal.jpg" 0 150 %}" alt="painting" data-feature-html="<h3>Portal</h3><p>24x30 -- Prints available</p><p>Who doesn’t look at the night sky to fantasize about what might be out there and what it could look like? I wonder what a Portal would look like, enticing and inviting to try something new.</p>">
+        <img class="thumb" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/2x3_bearded_tiger.jpg" 0 150 %}" alt="painting" data-feature-html="<h3>Bearded Tiger</h3><p>24x30 -- Prints available</p><p>I have this black and white bedspread that totally took over my creative spirit and turned into the Bearded Tiger.</p>">
+        <img class="thumb" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/2x3_bastimentos.jpg" 0 150 %}" alt="painting" data-feature-html="<h3>Bastimentos</h3><p>24x30 -- Prints available</p><p>On one of my trips to Panama I visited this sleepy, laid-back little town, with my sister. We were taken to Bastimentos by water taxi, the only way to get there. We saw great beaches, the little red frog and ate with the 'Pirates of the Caribbean', while watching Pelicans dive for fish, at sunset.</p>">
+        <img class="thumb" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/3x3_treasure_ship.jpg" 0 150 %}" alt="painting" data-feature-html="<h3>Treasure Ship</h3><p>30x30  --  Prints available</p><p>For some time under water captured my imagination and I painter everything water. This was one of the sunken ships that created itself and appeared on the canvas.</p>">
+        <img style="display:none;" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/2x3_portal.jpg" 0 500 %}">
+        <img style="display:none;" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/2x3_bearded_tiger.jpg" 0 500 %}">
+        <img style="display:none;" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/2x3_bastimentos.jpg" 0 500 %}">
+        <img style="display:none;" src="{{ MEDIA_URL }}{% thumbnail "uploads/paintings-gallery/3x3_treasure_ship.jpg" 0 500 %}">
         </div></div>
         <a href="paintings-gallery" class="gallery">Paintings Gallery</a>
     </article>
@@ -39,25 +47,24 @@
         <p>The art in photography is in capturing the moment of wonder and emotion. I specialize in nature and portrait photography.</p>
         <div class="images">
         <div class="feature-thumb">
-            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/simg_8236.jpg" 625 550 %}" alt="">
-            <img style="display:none;" src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/simg_8236.jpg" 250 175 %}" alt="">
+            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/simg_8236.jpg" 0 500 %}" alt="">
+            <img style="display:none;" src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/simg_8236.jpg" 0 150 %}" alt="">
         </div>
         <div class="thumb-div">
-            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/simg_0358.jpg" 250 175 %}" alt="" class="thumb">
-            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/s2img_9466.jpg" 250 175 %}" alt="" class="thumb">
-            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/sf4kp1206.jpg" 250 175 %}" alt="" class="thumb">
-            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/simg_0358.jpg" 625 550 %}" alt="" style="display:none;">
-            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/s2img_9466.jpg" 625 550 %}" alt="" style="display:none;">
-            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/sf4kp1206.jpg" 625 550 %}" alt="" style="display:none;">
+            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/simg_0358.jpg" 0 150 %}" alt="" class="thumb">
+            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/s2img_9466.jpg" 0 150 %}" alt="" class="thumb">
+            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/sf4kp1206.jpg" 0 150 %}" alt="" class="thumb">
+            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/simg_0358.jpg" 0 500 %}" alt="" style="display:none;">
+            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/s2img_9466.jpg" 0 500 %}" alt="" style="display:none;">
+            <img src="{{ MEDIA_URL }}{% thumbnail "uploads/photo-gallery/sf4kp1206.jpg" 0 500 %}" alt="" style="display:none;">
         </div></div>
         <a href="photo-gallery" class="gallery">Photo Gallery</a>
     </article>
     <article id="contact">
         <h2>Contact Me</h2>
       <p>Please email me to inquire about purchasing or commissioning a painting or print.</p>
-        <p>email: <a href="mailto: irmelin@comcast.net">irmelin@comcast.net</a>
-        </p>
-      <p>phone: <a href="tel:303-665-6499">1 303 665 6499</a></p>
+        <p>email: <a href="mailto: irmelin@comcast.net">irmelin@comcast.net</a></p>
+        <p>phone: <a href="tel:303-665-6499">1 303 665 6499</a></p>
     </article>
 </section>
 {% endblock %}

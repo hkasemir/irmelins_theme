@@ -73,6 +73,7 @@ video {
 }
 
 footer {
+  display: flex;
   margin-top: 2em;
   text-align: center;
   padding: 2.5em;
@@ -84,6 +85,16 @@ footer {
 footer > a {
   text-decoration: none;
   color: #4FA1C4;
+}
+
+footer div.left {
+  flex:1;
+  text-align: left;
+}
+
+footer div.right {
+  flex:1;
+  text-align: right;
 }
 
 a.gallery {
@@ -146,8 +157,8 @@ ul.nav > li.active a {
 }
 
 div.featured-image {
-    height: 500px;
-    background: url('http://irmelins.webfactional.com/media/uploads/paintings-gallery/3x3_treasure_ship.jpg') no-repeat center center fixed;
+    height: 450px;
+    background: url('http://irmelins.webfactional.com/media/uploads/galleries/sparring.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -157,8 +168,8 @@ div.featured-image {
   margin-top: 1.5em;
 }
 
-.images {
-  display: flex;
+div.images {
+  display: block;
   margin-bottom: 2em;
 }
 
@@ -175,26 +186,28 @@ img.dark {
 }
 
 .feature-thumb {
-    flex: 2.5;
-    margin-bottom: -4px;
+  margin-bottom: -4px;
+  text-align: center;
 }
 
 .feature-thumb img{
-    width: 100%;
-/*    padding: 10px 0;*/
+  max-width: 100%
+}
+
+div.thumb-div>img {
+  margin: 5px;
 }
 
 .thumb {
-  width: 100%;
   cursor: pointer;
 }
 
 .thumb-div {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 10px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  overflow: scroll;
 }
 
 div.gallery {
@@ -216,17 +229,38 @@ img.responsive {
   margin-bottom: 2em;
 }
 
-
+@media (min-width: 1200px) {  
+  div.featured-image {
+      height: 600px;
+      background: url('http://irmelins.webfactional.com/media/uploads/galleries/sparring.jpg') no-repeat center center;
+      background-size: cover;
+  }
+  
+}
+  
 @media (max-width: 825px) {
+  div.featured-image {
+      height: 350px;
+      background: url('http://irmelins.webfactional.com/media/uploads/galleries/sparring.jpg') no-repeat center center;
+      background-size: cover;
+  }
   nav {
     justify-content: center;
     padding-top: 3em;
   }
   
-  li.brand a{
+  li.brand a {
     width: 100%;
     text-align: center;  
     padding-bottom: 0;
+  }
+  
+  div.thumb-div {
+    display: flex;
+  }
+  
+  div.thumb-div img {
+    flex: 1;
   }
   
   div.column {
@@ -236,39 +270,58 @@ img.responsive {
 
 
 @media (max-width: 600px) {
+  div.featured-image {
+      height: 250px;
+      background: url('http://irmelins.webfactional.com/media/uploads/galleries/sparring.jpg') no-repeat center center;
+      background-size: cover;
+  }
+
+
   ul.navbar-nav {
     display: block;
-  }
-  
-  div.images {
-    display: block;
-  }
-  
-  div.thumb-div {
-    
-    flex-direction: row;
-    padding-left: 0;
-    margin-top: 15px;
-  }
-  
-  div.thumb-div>img {
-    width: 32%;
-    height: 32%;
   }
   
   div.about {
     display: block;
   }
   
+  div.thumb-div {
+    height: 100px;
+  }
+  
   div.column {
     width: 50%;
   }
+  
+  footer {
+    flex-direction: column;
+  }
+  
+  footer div.right {
+    text-align: center;
+    order: 1;
+  }
+  
+  footer div.left {
+    text-align: center;
+    order:2;
+  }  
 }
 
 
 @media (max-width: 400px) {
+  div.featured-image {
+      height: 150px;
+      background: url('http://irmelins.webfactional.com/media/uploads/galleries/sparring.jpg') no-repeat center center;
+      background-size: cover;
+  }
+
   
   div.column {
     width: 100%;
+  }
+  
+  div.thumb-div {
+    height: 75px;
   }
 }
