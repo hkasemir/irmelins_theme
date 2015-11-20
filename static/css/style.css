@@ -230,7 +230,7 @@ img.responsive {
 @media (min-width: 1200px) {  
   div.featured-image {
       height: 550px;
-      background: url('http://irmelins.webfactional.com/media/uploads/galleries/.thumbnails/sparring.jpg/sparring-0x500.jpg') no-repeat center center;
+      background: url('http://irmelins.webfactional.com/media/uploads/galleries/.thumbnails/sparring.jpg/sparring-min-0x500.jpg') no-repeat center center;
       background-size: cover;
   }
   
@@ -239,7 +239,7 @@ img.responsive {
 @media (max-width: 825px) {
   div.featured-image {
       height: 350px;
-      background: url('http://irmelins.webfactional.com/media/uploads/galleries/.thumbnails/sparring.jpg/sparring-0x500.jpg') no-repeat center center;
+      background: url('http://irmelins.webfactional.com/media/uploads/galleries/.thumbnails/sparring.jpg/sparring-min-0x500.jpg') no-repeat center center;
       background-size: cover;
   }
   nav {
@@ -270,7 +270,7 @@ img.responsive {
 @media (max-width: 600px) {
   div.featured-image {
       height: 250px;
-      background: url('http://irmelins.webfactional.com/media/uploads/galleries/.thumbnails/sparring.jpg/sparring-0x250.jpg') no-repeat center center;
+      background: url('http://irmelins.webfactional.com/media/uploads/galleries/.thumbnails/sparring.jpg/sparring-min-0x250.jpg') no-repeat center center;
       background-size: cover;
   }
 
@@ -310,7 +310,7 @@ img.responsive {
 @media (max-width: 400px) {
   div.featured-image {
       height: 150px;
-      background: url('http://irmelins.webfactional.com/media/uploads/galleries/.thumbnails/sparring.jpg/sparring-0x250.jpg') no-repeat center center;
+      background: url('http://irmelins.webfactional.com/media/uploads/galleries/.thumbnails/sparring.jpg/sparring-min-0x250.jpg') no-repeat center center;
       background-size: cover;
   }
 
