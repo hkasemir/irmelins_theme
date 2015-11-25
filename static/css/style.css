@@ -212,19 +212,17 @@ div.gallery {
   display: flex;
   flex-wrap: wrap;
   margin-top: 7em;
+  justify-content: center;
 }
 
 div.column {
-  width: 25%;
-  min-width: 200px;
 }
 
 img.responsive {
   display: block;
-  width: 93%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2em;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 1200px) {  
@@ -262,10 +260,6 @@ img.responsive {
   div.thumb-div img {
     flex: 1;
   }
-  
-  div.column {
-    width: 33%;
-  }
 }
 
 
@@ -289,10 +283,6 @@ img.responsive {
     height: 100px;
   }
   
-  div.column {
-    width: 50%;
-  }
-  
   footer {
     flex-direction: column;
   }
@@ -314,9 +304,14 @@ img.responsive {
       height: 150px;
   }
 
-  
-  div.column {
+  a.thumbnail {
     width: 100%;
+  }
+  
+  img.responsive {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   div.thumb-div {

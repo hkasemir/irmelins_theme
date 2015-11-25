@@ -13,11 +13,9 @@
 <div class="gallery row">
 {% with page.gallery.images.all as images %}
 {% for image in images %}
-<div class="column">
     <a class="thumbnail" rel="#image-{{ image.id }}" title="{{ image.description }}" href="{{ image.file.url }}">
-        <img class="responsive" src="{{ MEDIA_URL }}{% thumbnail image.file 300 200 %}">
+        <img class="responsive" src="{{ MEDIA_URL }}{% thumbnail image.file 0 200 %}">
     </a>
-</div>
 {% endfor %}
 {% endwith %}
 </div>
